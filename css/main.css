@@ -1,147 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    width: 1000px;
-    height: 800px;
-    margin-top: 280px;
-    margin-left: 800px;
+  height: 100vh;
+  position: relative;
+}
+
+.mail_box {
+  width: 1000px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .left {
-    background-color: #fbfafa;
+  background-color: #fbfafa;
 }
 
 .left img {
-    padding: 20px 20px;
+  padding: 20px 20px;
 }
 
 .left .content {
-    width: 550px;
+  width: 550px;
 }
 
 .left .content .gform {
-    display: flex;
-    flex-direction: column;
-    padding-left: 75px;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 75px;
+  padding-top: 50px;
 }
 
 .gform label {
-    display: inline-block;
-    padding-bottom: 10px;
-    padding-left: 20px;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .gform input,
 .gform textarea {
-    display: block;
-    width: 400px;
-    height: 56px;
-    padding: 18px;
-    margin-bottom: 30px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #ecf0f6;
-    font-size: 16px;
-    color: #4e73ab;
-    outline: none;
+  display: block;
+  width: 400px;
+  height: 56px;
+  padding: 18px;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #ecf0f6;
+  font-size: 16px;
+  color: #4e73ab;
+  outline: none;
 }
 
 .gform input::placeholder,
 .gform textarea::placeholder {
-    color: #4e73ab;
+  color: #4e73ab;
 }
 
 .gform input:focus,
 .gform textarea:focus {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
 }
 
 .gform textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .left h2 {
-    font-size: 50px;
-    color: #4e73ab;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 120px;
+  font-size: 50px;
+  color: #4e73ab;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 120px;
 }
 
 .btn {
-    width: 100px;
-    height: 40px;
-    background-color: #4e73ab;
-    color: #fff;
-    padding: 12px 30px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 150px;
+  width: 100px;
+  height: 40px;
+  background-color: #4e73ab;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 150px;
 }
 
 .right {
-    width: 450px;
-    height: 800px;
+  width: 450px;
+  height: 800px;
 }
 
 .dimm {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.06);
-    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.06);
+  display: none;
 }
 
 .dimm i {
-    font-size: 60px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .dimm.active {
-    display: block;
+  display: block;
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    width: 300px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
 }
 
 .modal.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .modal span {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .modal p {
-    padding: 20px;
+  padding: 20px;
 }
 
 .close {
-    padding: 4px 10px;
+  padding: 4px 10px;
 }
