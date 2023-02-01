@@ -5,6 +5,7 @@
 }
 
 .container {
+  width: 1500px;
   height: 100vh;
   position: relative;
 }
